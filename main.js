@@ -1,10 +1,13 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Escribir un programa que calcule el volumen de una esfera: 
-    // Radio = 3 volumen de la esfera = 4/3 * PI * radio˄3
+    // 8. Escribir un programa que evalúe la siguiente expresión:
+    // (a+7*c)/(b+2-a)+2*b 
 
-    let radio = Number(prompt(`Escribe el radio de la esfera`))
+    let a = Number(prompt(`Ingrese el valor de a`))
+    let b = Number(prompt(`Ingrese el valor de b`))
+    let c = Number(prompt(`Ingrese el valor de c`))
 
-    let volumen = 4/3 * Math.PI * Math.pow(radio,3) 
+    let rta = (a+7*c)/(b+2-a)+2*b 
 
-    console.log(`El volumen de la esfera es ${volumen}`)
+    console.log(`%cLa respuesta es ${rta}`, `background-color: #2aca88; border-radius: 2px; border: 4px groove greenyellow;`)
+
 })
