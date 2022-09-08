@@ -1,19 +1,18 @@
 addEventListener("DOMContentLoaded", ()=>{
     
-    // 9. Escribir un programa que calcule el área y el volumen de un cilindro:
-    // A = (2 * (PI * r˄2)) + ((2 * PI * r) * h)
-    // V = (PI * r2) * h
+   // 10. Escribir un algoritmo que permita obtener las raíces reales de la ecuación de segundo grado: A * x2 +
+    // b * x + c, siendo X un valor constante.
+
+    let a = Number(prompt(`Ingrese el valor de a`))
+    let b = Number(prompt(`Ingrese el valor de b`))
+    let c = Number(prompt(`Ingrese el valor de c`))
 
 
-    let r = Number(prompt(`Ingrese el valor del radio del cilindro`))
-    let h = Number(prompt(`Ingrese la altura del cilindro`))
+    let raiz1 = ((-b + Math.sqrt(b**2 - 4 * a * c)) / (2 * a))
+    
+    let raiz2 = ((-b - Math.sqrt(b**2 - 4 * a * c)) / (2 * a))
 
+    console.log(`%cLa raiz 1 es:  ${raiz1}`, `background-color: #2aca88; border-radius: 2px; border: 4px groove greenyellow;`)
 
-    let area = (2 * (Math.PI * Math.pow(r,2) ))
-
-    let vol = (Math.PI * Math.pow(r,2) * h)
-
-    console.log(`%cEl area del cilindro es ${area}`, `background-color: #2aca88; border-radius: 2px; border: 4px groove greenyellow;`)
-
-    console.log(`%cEl volumen del cilindro es ${vol}`, `background-color: #f49efc; border-radius: 2px; border: 4px dotted rgb(106, 106, 255);color: black;`)
+    console.log(`%cLa raiz 2 es: ${raiz2}`, `background-color: #f49efc; border-radius: 2px; border: 4px dotted rgb(106, 106, 255);color: black;`)
 })
