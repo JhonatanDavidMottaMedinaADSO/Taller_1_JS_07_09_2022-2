@@ -1,16 +1,18 @@
 addEventListener("DOMContentLoaded", ()=>{
     
-    // 11. Escribir un programa que calcule el volumen de un elipsoide
-    // V = (4/3) * PI * a * b *c
+    // 12. Programa que muestre el pago de una llamada telefónica sabiendo que cada minuto cuesta $355
+    // pesos y un IVA de 20%.
     
 
-    let a = Number(prompt(`Ingrese el valor de a`))
-    let b = Number(prompt(`Ingrese el valor de b`))
-    let c = Number(prompt(`Ingrese el valor de c`))
+    let min = Number(prompt(`¿Cúantos minutos estuvo en llamada?`))
 
+    let pago = ( min * 355 )
 
-    let elip = ((4/3) * Math.PI * a * b * c)
+    let iva = ( pago * 0.2 )
 
-    console.log(`%cEl volumen del elipsoide es:  ${elip}`, `background-color: #2aca88; border-radius: 2px; border: 4px groove greenyellow;`)
-    
+    let pagoIva = ( pago + iva )
+
+    console.log(`%cSu pago por la llamada telefonica sin el iva es: ${pago}`, `background-color: #2aca88; border-radius: 2px; border: 4px groove greenyellow;`)
+    console.log(`%cSu pago por la llamada telefonica es:  ${pagoIva}`, `background-color: #2aca88; border-radius: 2px; border: 4px groove greenyellow;`)
+
 })
