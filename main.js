@@ -1,14 +1,15 @@
 addEventListener("DOMContentLoaded", ()=>{
     
-    // 18. Calcular el sueldo de un empleado dados como datos de entrada: el nombre, hrs. De trabajo y el pago
-    // en hora. Pagohora=15300
-                        
+    // 19. Un estudiante realiza cuatro exámenes. Realizar el pseudocódigo que representen el algoritmo
+    // correspondiente para obtener el promedio de las calificaciones obtenidas. las calificaciones van 1 a 5 puntos.             
     
-    let nom = prompt(`ingrese su nombre`)
-    let horaT = Number(prompt(`Horas trabajadas`))
+    let cali1 =  Number(prompt(`Ingrese la calificación del examen 1:`))
+    let cali2 =  Number(prompt(`Ingrese la calificación del examen 2:`))
+    let cali3 =  Number(prompt(`Ingrese la calificación del examen 3:`))
+    let cali4 =  Number(prompt(`Ingrese la calificación del examen 4:`))
 
-    let pagoxHoras = horaT * 15300
+    let promCali = (cali1 + cali2 + cali3 + cali4) / 4
 
 
-    console.log(`%c${nom} su pago es ${pagoxHoras}`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
+    console.log(`%cEl promedio de las cuatro calificaciones es ${promCali}`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
 })
