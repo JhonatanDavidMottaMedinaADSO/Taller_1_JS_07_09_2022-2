@@ -1,15 +1,14 @@
 addEventListener("DOMContentLoaded", ()=>{
     
-    // 13. Realice un algoritmo que a partir de proporcionarle la velocidad de un automóvil expresada en
-    // kilómetros por hora, proporcione la velocidad en metros por segundos.
+    // 14. Una farmacia aplica al precio de los remedios el 10% de descuento, hacer un programa que
+    // ingresando el costo de los medicamentos calcules el descuento y el precio final.
     
-    
+    let med = Number(prompt(`¿Cuál es el precio del medicamento?`))
 
-    let kmH = Number(prompt(`¿Velocidad del vehiculo en kilometros por hora?`))
-
-    let metSeg = ( kmH * 1000 * (1/3600) )
-    
-    console.log(`%cLa velocidad en metros por segundos es ${metSeg}`, `background-color: #2aca88; border-radius: 2px; border: 4px groove greenyellow;`)
+    let des = med * 0.1
+    let precioF = med - des
+    console.log(`Su descuento es de ${des}`)
+    console.log(`%cEl precio final aplicando el descuento es: ${precioF}`, `background-color: #2aca88; border-radius: 2px; border: 4px groove greenyellow;`)
 
     
 })
