@@ -1,15 +1,17 @@
 addEventListener("DOMContentLoaded", ()=>{
     
-    // 19. Un estudiante realiza cuatro exámenes. Realizar el pseudocódigo que representen el algoritmo
-    // correspondiente para obtener el promedio de las calificaciones obtenidas. las calificaciones van 1 a 5 puntos.             
+    // 20. Un vendedor recibe un sueldo base más el 10% de comisión sobre sus ventas. Si en un mes
+    // cualquiera hace tres ventas por valores: v1, v2 y v3, ¿cuánto recibirá por comisión? y ¿cuánto en total sueldo del vendedor?  
     
-    let cali1 =  Number(prompt(`Ingrese la calificación del examen 1:`))
-    let cali2 =  Number(prompt(`Ingrese la calificación del examen 2:`))
-    let cali3 =  Number(prompt(`Ingrese la calificación del examen 3:`))
-    let cali4 =  Number(prompt(`Ingrese la calificación del examen 4:`))
+    let sueldo = Number(prompt(`Ingrese su sueldo`))
+    let v1 =  Number(prompt(`Ingrese el valor de la venta 1:`))
+    let v2 =  Number(prompt(`Ingrese el valor de la venta 2::`))
+    let v3 =  Number(prompt(`Ingrese el valor de la venta 3::`))
+   
+    let comiVentas = (v1 + v2 +v3) * 0.1
+    let sueldoTotal = (comiVentas + sueldo)
 
-    let promCali = (cali1 + cali2 + cali3 + cali4) / 4
 
 
-    console.log(`%cEl promedio de las cuatro calificaciones es ${promCali}`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
+    console.log(`%cUsted recibirá por comisiones ${comiVentas} y el total de su sueldo mas comisiones es ${sueldoTotal}`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
 })
